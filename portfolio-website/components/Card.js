@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Card(props) {
   return (
-    <div className="text-center shadow-lg p-10 rounded-xl my-10 md:w-96">
+    <div className="text-center shadow-lg p-10 rounded-xl my-10 md:w-96 dark:bg-slate-100">
       <Image src={props.image} width={100} height={100} className="mx-auto" />
       <h3 className="text-lg font-semibold pt-8 pb-2">{props.header}</h3>
       <p className="py-2">{props.text}</p>
